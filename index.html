@@ -1,15 +1,19 @@
 <!doctype html>
 
-<html>
+<html ng-app="app">
     <head>
         <h1>Angular js Example</h1>
-        <script type="text/javascript" src="js/angular.min.js"/>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
     </head>
     <body ng-controller="IndexController">
         <h3>Hello World Welcome to Angular</h3>
-        <div class="">
-            <input name="firstName" type="text">
-            <input name="lastName" type="text">
+        <div>
+            <ul>
+                <li ng-repeat="user in users">
+                    {{ user.firstname }}, {{ user.lastname }}
+                </li>
+            </ul>
         </div>
     </body>
 </html>
