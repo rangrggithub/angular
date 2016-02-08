@@ -10,7 +10,7 @@
             },
             {
                 firstname: 'Raj',
-                lastname: 'Raj'
+                lastname: 'Dahal'
             }
         ];
         
